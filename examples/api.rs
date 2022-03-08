@@ -1,12 +1,16 @@
 extern crate cossack;
-use cossack::{put, get, delete};
+use cossack::DB;
 
 fn main() {
-    print!("Hello world.");
+    
+    let mut db = DB::open();
 
-    put(b"key", b"this is value");
-    let value = get(b"key");
+    db.put(b"key", b"this is value");
+
+    let value = db.get(b"key");
     println!("value: {:?}", value);
 
-    let _result = delete(b"key");
+    let _result = db.delete(b"key");
+
+    db.close();
 }
