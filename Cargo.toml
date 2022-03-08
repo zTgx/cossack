@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "src/engine",
+    "src/rpc",
+    "src/primitives",
+]
