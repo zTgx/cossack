@@ -3,7 +3,7 @@
 /// 
 
 mod db_impl;
-
+pub mod status;
 
 pub struct DB {
 
