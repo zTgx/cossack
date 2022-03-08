@@ -1,5 +1,5 @@
 # cossack
- A distributed key value store 
+ A toy key value store 
 
 ### Build
 ```
