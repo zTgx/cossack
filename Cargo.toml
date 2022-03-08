@@ -1,6 +1,6 @@
-[workspace]
-members = [
-    "src/engine",
-    "src/rpc",
-    "src/primitives",
-]
+[package]
+name = "cossack"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
